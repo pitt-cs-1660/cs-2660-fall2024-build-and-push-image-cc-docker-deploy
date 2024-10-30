@@ -93,7 +93,7 @@ jobs:
           context: ./
           file: ./Dockerfile
           push: true
-          tags: us-central1-docker.pkg.dev/hw3-cs2060/pitt-cs-1660/build-and-push-image-naruto-sai/node-demo:v1 # Ensure this matches your project and repo
+          tags: us-central1-docker.pkg.dev/hw3-cs2060/iam-perms-mgmt/node-demo:v1 # Ensure this matches your project and repo
 
 # Uncomment the following block if you want to use regular Docker commands
 #      - name: Build and Push Without Buildx
