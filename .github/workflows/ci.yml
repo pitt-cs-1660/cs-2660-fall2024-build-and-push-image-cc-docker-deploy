@@ -1,44 +1,44 @@
-on:
-  push:
-    branches:
-      - main
-      - login-gcr.io # @note: use any development branch you would like
+# on:
+#   push:
+#     branches:
+#       - main
+#       - login-gcr.io # @note: use any development branch you would like
 
-jobs:
-  build-and-push-to-gcr:
-    runs-on: ubuntu-22.04
-    permissions:
-      contents: 'read'
-      id-token: 'write'
-    steps:
-      # checkout code
-      - uses: actions/checkout@v4
+# jobs:
+#   build-and-push-to-gcr:
+#     runs-on: ubuntu-22.04
+#     permissions:
+#       contents: 'read'
+#       id-token: 'write'
+#     steps:
+#       # checkout code
+#       - uses: actions/checkout@v4
 
-      # authenticate with GCP with workload identity provider
-     - uses: 'google-github-actions/auth@v2'
-       id: auth
-       name: Authenticate to GCP
-       with:
-         project_id: 'hw3-cs2060' # update with your project ID
-         workload_identity_provider: 'projects/253436868674/locations/global/workloadIdentityPools/github/providers/build-and-push-image-naruto-sai' # update with your Workload Identity Pool
+#       # authenticate with GCP with workload identity provider
+#      - uses: 'google-github-actions/auth@v2'
+#        id: auth
+#        name: Authenticate to GCP
+#        with:
+#          project_id: 'hw3-cs2060' # update with your project ID
+#          workload_identity_provider: 'projects/253436868674/locations/global/workloadIdentityPools/github/providers/build-and-push-image-naruto-sai' # update with your Workload Identity Pool
 
-      # configure/login with docker
-     - name: gcloud Configure Docker
-       run: gcloud auth configure-docker us-central1.pkg.dev
+#       # configure/login with docker
+#      - name: gcloud Configure Docker
+#        run: gcloud auth configure-docker us-central1.pkg.dev
 
-      # setup docker buildx
-     - name: Setup docker buildx
-       uses: docker/setup-buildx-action@v3
-       with:
-         platforms: linux/amd64,linux/arm64
+#       # setup docker buildx
+#      - name: Setup docker buildx
+#        uses: docker/setup-buildx-action@v3
+#        with:
+#          platforms: linux/amd64,linux/arm64
 
-     - name: Build and Push
-       uses: docker/build-push-action@v6
-       with:
-         context: ./
-         file: ./Dockerfile
-         push: true
-         tags: us-central1-docker.pkg.dev/cc-fall2024/dansc0de/node-demo:test
+#      - name: Build and Push
+#        uses: docker/build-push-action@v6
+#        with:
+#          context: ./
+#          file: ./Dockerfile
+#          push: true
+#          tags: us-central1-docker.pkg.dev/cc-fall2024/dansc0de/node-demo:test
 
 # @note: you can use regular docker commands instead of the shared action
 #      - name: Build and Push Without Buildx
@@ -46,3 +46,57 @@ jobs:
 #          docker build -t [GCP REGION].pkg.dev/[PROJECT ID]/[REPO NAME]/[IMAGE NAME]:[TAG] .
 #          docker push [GCP REGION].pkg.dev/[PROJECT ID]/[REPO NAME]/[IMAGE NAME]:[TAG]
 #          --> us-central1.pkg.dev/cc-fall2024/dansc0de/node-demo:v1 <--
+
+
+name: Build and Push Docker Image to GCP Artifact Registry
+
+on:
+  push:
+    branches:
+      - main
+      - login-gcr.io # Specify any development branch you would like
+
+jobs:
+  build-and-push-to-gcr:
+    runs-on: ubuntu-22.04
+    permissions:
+      contents: read
+      id-token: write
+
+    steps:
+      # Step 1: Checkout code
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      # Step 2: Authenticate with GCP using Workload Identity Provider
+      - name: Authenticate to GCP
+        id: auth
+        uses: google-github-actions/auth@v2
+        with:
+          project_id: 'hw3-cs2060' # Update with your project ID
+          workload_identity_provider: 'projects/253436868674/locations/global/workloadIdentityPools/github/providers/build-and-push-image-naruto-sai' # Update with your Workload Identity Pool
+
+      # Step 3: Configure Docker to authenticate with Artifact Registry
+      - name: Configure Docker for Artifact Registry
+        run: gcloud auth configure-docker us-central1-docker.pkg.dev # Ensure to match your repository's region
+
+      # Step 4: Setup Docker Buildx for multi-platform builds
+      - name: Setup Docker Buildx
+        uses: docker/setup-buildx-action@v3
+        with:
+          platforms: linux/amd64,linux/arm64
+
+      # Step 5: Build and Push Docker image to GCP Artifact Registry
+      - name: Build and Push Docker Image
+        uses: docker/build-push-action@v6
+        with:
+          context: ./
+          file: ./Dockerfile
+          push: true
+          tags: us-central1-docker.pkg.dev/hw3-cs2060/dansc0de/node-demo:test # Ensure this matches your project and repo
+
+# Uncomment the following block if you want to use regular Docker commands
+#      - name: Build and Push Without Buildx
+#        run: |
+#          docker build -t us-central1-docker.pkg.dev/hw3-cs2060/dansc0de/node-demo:test .
+#          docker push us-central1-docker.pkg.dev/hw3-cs2060/dansc0de/node-demo:test
