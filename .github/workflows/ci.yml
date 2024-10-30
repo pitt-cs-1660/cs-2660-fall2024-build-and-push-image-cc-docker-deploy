@@ -93,7 +93,7 @@ jobs:
           context: ./
           file: ./Dockerfile
           push: true
-          tags: us-central1-docker.pkg.dev/hw3-cs2060/dansc0de/node-demo:test # Ensure this matches your project and repo
+          tags: us-central1-docker.pkg.dev/cc-fall2024/dansc0de/node-demo:test # Ensure this matches your project and repo
 
 # Uncomment the following block if you want to use regular Docker commands
 #      - name: Build and Push Without Buildx
