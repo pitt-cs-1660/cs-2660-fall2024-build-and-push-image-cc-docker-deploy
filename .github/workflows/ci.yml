@@ -19,7 +19,7 @@ jobs:
        id: auth
        name: Authenticate to GCP
        with:
-         project_id: 'clear-practice-435922-q9' # update with your project ID
+         project_id: 'hw3-cs2060' # update with your project ID
          workload_identity_provider: 'projects/253436868674/locations/global/workloadIdentityPools/github/providers/build-and-push-image-naruto-sai' # update with your Workload Identity Pool
 
       # configure/login with docker
