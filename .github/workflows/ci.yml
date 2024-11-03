@@ -2,7 +2,7 @@ on:
   push:
     branches:
       - main
-      - login-gcr.io # @note: use any development branch you would like
+      - login-gcr.io # You can use any development branch you'd like
 
 jobs:
   build-and-push-to-gcr:
@@ -11,38 +11,32 @@ jobs:
       contents: 'read'
       id-token: 'write'
     steps:
-      # checkout code
+      # Checkout code
       - uses: actions/checkout@v4
 
-      # authenticate with GCP with workload identity provider
-#      - uses: 'google-github-actions/auth@v2'
-#        id: auth
-#        name: Authenticate to GCP
-#        with:
-#          project_id: 'your-special-project-id' # update with your project ID
-#          workload_identity_provider: 'projects/012345678901/locations/global/workloadIdentityPools/github2/providers/dansc0de' # update with your Workload Identity Pool
+      # Authenticate with GCP using workload identity provider
+      - name: Authenticate to GCP
+        uses: google-github-actions/auth@v2
+        id: auth
+        with:
+          project_id: 'jovial-hawk-440419-n4'
+          workload_identity_provider: 'projects/124836985683/locations/global/workloadIdentityPools/build3/providers/git3'
 
-      # configure/login with docker
-#      - name: gcloud Configure Docker
-#        run: gcloud auth configure-docker [REGION].pkg.dev
+      # Configure Docker to use Google Artifact Registry
+      - name: Configure Docker for Artifact Registry
+        run: gcloud auth configure-docker us-central1-docker.pkg.dev
 
-      # setup docker buildx
-#      - name: Setup docker buildx
-#        uses: docker/setup-buildx-action@v3
-#        with:
-#          platforms: linux/amd64,linux/arm64
+      # Set up docker buildx
+      - name: Set up Docker buildx
+        uses: docker/setup-buildx-action@v3
+        with:
+          platforms: linux/amd64,linux/arm64
 
-#      - name: Build and Push
-#        uses: docker/build-push-action@v6
-#        with:
-#          context: ./
-#          file: ./Dockerfile
-#          push: true
-#          tags: us-central1-docker.pkg.dev/cc-fall2024/dansc0de/node-demo:test
-
-# @note: you can use regular docker commands instead of the shared action
-#      - name: Build and Push Without Buildx
-#        run: |
-#          docker build -t [GCP REGION].pkg.dev/[PROJECT ID]/[REPO NAME]/[IMAGE NAME]:[TAG] .
-#          docker push [GCP REGION].pkg.dev/[PROJECT ID]/[REPO NAME]/[IMAGE NAME]:[TAG]
-#          --> us-central1.pkg.dev/cc-fall2024/dansc0de/node-demo:v1 <--
+      # Build and Push Docker Image
+      - name: Build and Push Docker Image
+        uses: docker/build-push-action@v6
+        with:
+          context: ./
+          file: ./Dockerfile
+          push: true
+          tags: us-central1-docker.pkg.dev/jovial-hawk-440419-n4/my-docker-repo/my-image:latest
