@@ -2,7 +2,7 @@ on:
   push:
     branches:
       - main
-      - login-gcr.io # You can use any development branch you'd like
+      - login-gcr.io # You can use any development branch you would like
 
 jobs:
   build-and-push-to-gcr:
@@ -26,13 +26,11 @@ jobs:
       - name: Configure Docker for Artifact Registry
         run: gcloud auth configure-docker us-central1-docker.pkg.dev
 
-      # Set up docker buildx
+      # Set up Docker buildx
       - name: Set up Docker buildx
         uses: docker/setup-buildx-action@v3
         with:
           platforms: linux/amd64,linux/arm64
-
-    #hello there
 
       # Build and Push Docker Image
       - name: Build and Push Docker Image
