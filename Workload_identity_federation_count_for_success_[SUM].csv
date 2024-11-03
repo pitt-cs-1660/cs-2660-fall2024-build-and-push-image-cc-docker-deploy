@@ -1,0 +1,15 @@
+TimeSeries ID,workload_identity_federation/count.iam.googleapis.com/WorkloadIdentityPoolProvider.ALIGN_RATE.REDUCE_SUM.metric.type="iam.googleapis.com/workload_identity_federation/count" resource.type="iam.googleapis.com/WorkloadIdentityPoolProvider" metric.label."result"="success".60s.pool_id:build3.project_id:jovial-hawk-440419-n4
+project_id,jovial-hawk-440419-n4
+pool_id,build3
+Sun Nov 03 2024 17:28:00 GMT-0500 (Eastern Standard Time),0.006110935182253037
+Sun Nov 03 2024 17:29:00 GMT-0500 (Eastern Standard Time),0.02888853703117274
+Sun Nov 03 2024 17:30:00 GMT-0500 (Eastern Standard Time),0.031667194453240885
+Sun Nov 03 2024 17:58:00 GMT-0500 (Eastern Standard Time),0.006110935182253037
+Sun Nov 03 2024 17:59:00 GMT-0500 (Eastern Standard Time),0.02888853703117274
+Sun Nov 03 2024 18:00:00 GMT-0500 (Eastern Standard Time),0.031667194453240885
+Sun Nov 03 2024 18:01:00 GMT-0500 (Eastern Standard Time),0.006110935182253037
+Sun Nov 03 2024 18:02:00 GMT-0500 (Eastern Standard Time),0.02888853703117274
+Sun Nov 03 2024 18:03:00 GMT-0500 (Eastern Standard Time),0.031667194453240885
+Sun Nov 03 2024 18:06:00 GMT-0500 (Eastern Standard Time),0.006110935182253037
+Sun Nov 03 2024 18:07:00 GMT-0500 (Eastern Standard Time),0.02888853703117274
+Sun Nov 03 2024 18:08:00 GMT-0500 (Eastern Standard Time),0.031667194453240885

@@ -1,0 +1,1149 @@
+[
+  {
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "authenticationInfo": {
+        "principalEmail": "dheerajpv487@gmail.com"
+      },
+      "requestMetadata": {
+        "callerIp": "198.44.136.214",
+        "callerSuppliedUserAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.1 Safari/605.1.15,gzip(gfe),gzip(gfe)",
+        "requestAttributes": {},
+        "destinationAttributes": {}
+      },
+      "methodName": "google.api.serviceusage.v1.ServiceUsage.EnableService",
+      "authorizationInfo": [
+        {
+          "resource": "projectnumbers/953234336406/services/cloudapis.googleapis.com",
+          "permission": "serviceusage.services.enable",
+          "granted": true,
+          "resourceAttributes": {},
+          "permissionType": "ADMIN_WRITE"
+        },
+        {
+          "resource": "services/cloudapis.googleapis.com",
+          "permission": "servicemanagement.services.bind",
+          "granted": true,
+          "resourceAttributes": {},
+          "permissionType": "DATA_WRITE"
+        }
+      ],
+      "resourceName": "projects/jovial-hawk-440419-n4/services/cloudapis.googleapis.com"
+    },
+    "insertId": "9rp3kzd2aoa",
+    "resource": {
+      "type": "audited_resource",
+      "labels": {
+        "project_id": "jovial-hawk-440419-n4",
+        "method": "google.api.serviceusage.v1.ServiceUsage.EnableService",
+        "service": ""
+      }
+    },
+    "timestamp": "2024-11-01T19:04:25.433096Z",
+    "severity": "NOTICE",
+    "logName": "projects/jovial-hawk-440419-n4/logs/cloudaudit.googleapis.com%2Factivity",
+    "operation": {
+      "id": "operations/acat.p2-953234336406-9f413add-990b-4ba6-bc34-b7d855bd0b7e",
+      "producer": "serviceusage.googleapis.com",
+      "first": true
+    },
+    "receiveTimestamp": "2024-11-01T19:04:27.527165090Z"
+  },
+  {
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "authenticationInfo": {
+        "principalEmail": "dheerajpv487@gmail.com"
+      },
+      "requestMetadata": {
+        "callerIp": "198.44.136.214",
+        "callerSuppliedUserAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.1 Safari/605.1.15,gzip(gfe),gzip(gfe)",
+        "requestAttributes": {},
+        "destinationAttributes": {}
+      },
+      "serviceName": "serviceusage.googleapis.com",
+      "methodName": "google.api.serviceusage.v1.ServiceUsage.EnableService",
+      "authorizationInfo": [
+        {
+          "resource": "projectnumbers/953234336406/services/cloudapis.googleapis.com",
+          "permission": "serviceusage.services.enable",
+          "granted": true,
+          "resourceAttributes": {},
+          "permissionType": "ADMIN_WRITE"
+        },
+        {
+          "resource": "services/cloudapis.googleapis.com",
+          "permission": "servicemanagement.services.bind",
+          "granted": true,
+          "resourceAttributes": {},
+          "permissionType": "DATA_WRITE"
+        }
+      ],
+      "resourceName": "projects/jovial-hawk-440419-n4/services/cloudapis.googleapis.com",
+      "request": {
+        "name": "projects/jovial-hawk-440419-n4/services/cloudapis.googleapis.com",
+        "@type": "type.googleapis.com/google.api.serviceusage.v1.EnableServiceRequest"
+      }
+    },
+    "insertId": "d3k865dbvp0",
+    "resource": {
+      "type": "audited_resource",
+      "labels": {
+        "service": "serviceusage.googleapis.com",
+        "method": "google.api.serviceusage.v1.ServiceUsage.EnableService",
+        "project_id": "jovial-hawk-440419-n4"
+      }
+    },
+    "timestamp": "2024-11-01T19:04:25.433096Z",
+    "severity": "NOTICE",
+    "logName": "projects/jovial-hawk-440419-n4/logs/cloudaudit.googleapis.com%2Factivity",
+    "operation": {
+      "id": "operations/acat.p2-953234336406-9f413add-990b-4ba6-bc34-b7d855bd0b7e",
+      "producer": "serviceusage.googleapis.com",
+      "first": true
+    },
+    "receiveTimestamp": "2024-11-01T19:04:27.132056542Z"
+  },
+  {
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "status": {},
+      "authenticationInfo": {
+        "principalEmail": "dheerajpv487@gmail.com"
+      },
+      "requestMetadata": {
+        "callerIp": "198.44.136.214",
+        "callerSuppliedUserAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.1 Safari/605.1.15,gzip(gfe),gzip(gfe)",
+        "requestAttributes": {},
+        "destinationAttributes": {}
+      },
+      "serviceName": "serviceusage.googleapis.com",
+      "methodName": "google.longrunning.Operations.GetOperation",
+      "authorizationInfo": [
+        {
+          "resource": "projectnumbers/953234336406",
+          "permission": "serviceusage.services.enable",
+          "granted": true,
+          "resourceAttributes": {},
+          "permissionType": "ADMIN_WRITE"
+        },
+        {
+          "resource": "projectnumbers/953234336406/operations/-",
+          "permission": "serviceusage.operations.get",
+          "granted": true,
+          "resourceAttributes": {},
+          "permissionType": "DATA_READ"
+        },
+        {
+          "resource": "projectnumbers/953234336406",
+          "permission": "serviceusage.services.get",
+          "granted": true,
+          "resourceAttributes": {},
+          "permissionType": "DATA_READ"
+        }
+      ],
+      "resourceName": "projects/953234336406/operations/acat.p2-953234336406-9f413add-990b-4ba6-bc34-b7d855bd0b7e"
+    },
+    "insertId": "13gnp7odgku8",
+    "resource": {
+      "type": "audited_resource",
+      "labels": {
+        "method": "google.longrunning.Operations.GetOperation",
+        "project_id": "jovial-hawk-440419-n4",
+        "service": "serviceusage.googleapis.com"
+      }
+    },
+    "timestamp": "2024-11-01T19:04:26.537803Z",
+    "severity": "NOTICE",
+    "logName": "projects/jovial-hawk-440419-n4/logs/cloudaudit.googleapis.com%2Factivity",
+    "receiveTimestamp": "2024-11-01T19:04:27.118533245Z"
+  },
+  {
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "status": {},
+      "authenticationInfo": {
+        "principalEmail": "dheerajpv487@gmail.com"
+      },
+      "requestMetadata": {
+        "callerIp": "198.44.136.214",
+        "callerSuppliedUserAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.1 Safari/605.1.15,gzip(gfe),gzip(gfe)"
+      },
+      "serviceName": "serviceusage.googleapis.com",
+      "methodName": "google.api.serviceusage.v1.ServiceUsage.EnableService",
+      "authorizationInfo": [
+        {
+          "resource": "projectnumbers/953234336406/services/cloudapis.googleapis.com",
+          "permission": "serviceusage.services.enable",
+          "granted": true,
+          "permissionType": "ADMIN_WRITE"
+        },
+        {
+          "resource": "services/cloudapis.googleapis.com",
+          "permission": "servicemanagement.services.bind",
+          "granted": true,
+          "permissionType": "DATA_WRITE"
+        }
+      ],
+      "resourceName": "projects/jovial-hawk-440419-n4/services/cloudapis.googleapis.com",
+      "request": {
+        "name": "projects/jovial-hawk-440419-n4/services/cloudapis.googleapis.com",
+        "@type": "type.googleapis.com/google.api.serviceusage.v1.EnableServiceRequest"
+      },
+      "response": {
+        "service": {
+          "name": "projects/953234336406/services/cloudapis.googleapis.com",
+          "config": {
+            "name": "cloudapis.googleapis.com",
+            "title": "Google Cloud APIs"
+          },
+          "state": "ENABLED",
+          "parent": "projects/953234336406"
+        },
+        "@type": "type.googleapis.com/google.api.serviceusage.v1.EnableServiceResponse"
+      }
+    },
+    "insertId": "-wes5fld9qme",
+    "resource": {
+      "type": "audited_resource",
+      "labels": {
+        "method": "google.api.serviceusage.v1.ServiceUsage.EnableService",
+        "service": "serviceusage.googleapis.com",
+        "project_id": "jovial-hawk-440419-n4"
+      }
+    },
+    "timestamp": "2024-11-01T19:04:27.903486568Z",
+    "severity": "NOTICE",
+    "logName": "projects/jovial-hawk-440419-n4/logs/cloudaudit.googleapis.com%2Factivity",
+    "operation": {
+      "id": "operations/acat.p2-953234336406-9f413add-990b-4ba6-bc34-b7d855bd0b7e",
+      "producer": "serviceusage.googleapis.com",
+      "last": true
+    },
+    "receiveTimestamp": "2024-11-01T19:04:27.903486568Z"
+  },
+  {
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "status": {},
+      "authenticationInfo": {
+        "principalEmail": "dheerajpv487@gmail.com"
+      },
+      "requestMetadata": {
+        "callerIp": "198.44.136.214",
+        "callerSuppliedUserAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.1 Safari/605.1.15,gzip(gfe),gzip(gfe)"
+      },
+      "serviceName": "serviceusage.googleapis.com",
+      "methodName": "google.api.serviceusage.v1.ServiceUsage.EnableService",
+      "authorizationInfo": [
+        {
+          "resource": "projectnumbers/953234336406/services/cloudapis.googleapis.com",
+          "permission": "serviceusage.services.enable",
+          "granted": true,
+          "permissionType": "ADMIN_WRITE"
+        },
+        {
+          "resource": "services/cloudapis.googleapis.com",
+          "permission": "servicemanagement.services.bind",
+          "granted": true,
+          "permissionType": "DATA_WRITE"
+        }
+      ],
+      "resourceName": "projects/jovial-hawk-440419-n4/services/cloudapis.googleapis.com",
+      "request": {
+        "name": "projects/jovial-hawk-440419-n4/services/cloudapis.googleapis.com",
+        "@type": "type.googleapis.com/google.api.serviceusage.v1.EnableServiceRequest"
+      },
+      "response": {
+        "status": "ENABLED",
+        "services": [
+          "cloudapis.googleapis.com",
+          "analyticshub.googleapis.com",
+          "bigquery.googleapis.com",
+          "bigqueryconnection.googleapis.com",
+          "bigquerydatapolicy.googleapis.com",
+          "bigquerymigration.googleapis.com",
+          "bigqueryreservation.googleapis.com",
+          "bigquerystorage.googleapis.com",
+          "cloudtrace.googleapis.com",
+          "dataform.googleapis.com",
+          "dataplex.googleapis.com",
+          "datastore.googleapis.com",
+          "logging.googleapis.com",
+          "monitoring.googleapis.com",
+          "servicemanagement.googleapis.com",
+          "serviceusage.googleapis.com",
+          "sql-component.googleapis.com",
+          "storage-api.googleapis.com",
+          "storage-component.googleapis.com",
+          "storage.googleapis.com"
+        ],
+        "@type": "type.googleapis.com/google.api.tenant.apis.shared.activation.CrossLoggingResponse"
+      }
+    },
+    "insertId": "-wes5fld9qmg",
+    "resource": {
+      "type": "audited_resource",
+      "labels": {
+        "project_id": "jovial-hawk-440419-n4",
+        "method": "google.api.serviceusage.v1.ServiceUsage.EnableService",
+        "service": "serviceusage.googleapis.com"
+      }
+    },
+    "timestamp": "2024-11-01T19:04:27.903486568Z",
+    "severity": "NOTICE",
+    "logName": "projects/jovial-hawk-440419-n4/logs/cloudaudit.googleapis.com%2Factivity",
+    "operation": {
+      "id": "operations/acat.p2-953234336406-9f413add-990b-4ba6-bc34-b7d855bd0b7e",
+      "producer": "serviceusage.googleapis.com",
+      "last": true
+    },
+    "receiveTimestamp": "2024-11-01T19:04:27.903486568Z"
+  },
+  {
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "status": {},
+      "authenticationInfo": {
+        "principalEmail": "dheerajpv487@gmail.com"
+      },
+      "requestMetadata": {
+        "callerIp": "198.44.136.214",
+        "callerSuppliedUserAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.1 Safari/605.1.15,gzip(gfe),gzip(gfe)",
+        "requestAttributes": {},
+        "destinationAttributes": {}
+      },
+      "serviceName": "serviceusage.googleapis.com",
+      "methodName": "google.longrunning.Operations.GetOperation",
+      "authorizationInfo": [
+        {
+          "resource": "projectnumbers/953234336406",
+          "permission": "serviceusage.services.enable",
+          "granted": true,
+          "resourceAttributes": {},
+          "permissionType": "ADMIN_WRITE"
+        },
+        {
+          "resource": "projectnumbers/953234336406/operations/-",
+          "permission": "serviceusage.operations.get",
+          "granted": true,
+          "resourceAttributes": {},
+          "permissionType": "DATA_READ"
+        },
+        {
+          "resource": "projectnumbers/953234336406",
+          "permission": "serviceusage.services.get",
+          "granted": true,
+          "resourceAttributes": {},
+          "permissionType": "DATA_READ"
+        }
+      ],
+      "resourceName": "projects/953234336406/operations/acat.p2-953234336406-9f413add-990b-4ba6-bc34-b7d855bd0b7e"
+    },
+    "insertId": "970af1dd2gx",
+    "resource": {
+      "type": "audited_resource",
+      "labels": {
+        "project_id": "jovial-hawk-440419-n4",
+        "method": "google.longrunning.Operations.GetOperation",
+        "service": "serviceusage.googleapis.com"
+      }
+    },
+    "timestamp": "2024-11-01T19:04:28.030400Z",
+    "severity": "NOTICE",
+    "logName": "projects/jovial-hawk-440419-n4/logs/cloudaudit.googleapis.com%2Factivity",
+    "receiveTimestamp": "2024-11-01T19:04:28.512979524Z"
+  },
+  {
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "authenticationInfo": {
+        "principalEmail": "dheerajpv487@gmail.com",
+        "principalSubject": "user:dheerajpv487@gmail.com"
+      },
+      "requestMetadata": {
+        "callerIp": "198.44.136.214",
+        "callerSuppliedUserAgent": "google-cloud-sdk gcloud/499.0.0 command/gcloud.services.enable invocation-id/e2c7f2aead154eecb2302da15bc9cb98 environment/None environment-version/None client-os/MACOSX client-os-ver/24.1.0 client-pltf-arch/arm interactive/True from-script/False python/3.11.6 term/xterm-256color (Macintosh; Intel Mac OS X 24.1.0),gzip(gfe)",
+        "requestAttributes": {},
+        "destinationAttributes": {}
+      },
+      "serviceName": "serviceusage.googleapis.com",
+      "methodName": "google.api.serviceusage.v1.ServiceUsage.EnableService",
+      "authorizationInfo": [
+        {
+          "resource": "projectnumbers/953234336406/services/artifactregistry.googleapis.com",
+          "permission": "serviceusage.services.enable",
+          "granted": true,
+          "resourceAttributes": {},
+          "permissionType": "ADMIN_WRITE"
+        },
+        {
+          "resource": "services/artifactregistry.googleapis.com",
+          "permission": "servicemanagement.services.bind",
+          "granted": true,
+          "resourceAttributes": {},
+          "permissionType": "DATA_WRITE"
+        }
+      ],
+      "resourceName": "projects/jovial-hawk-440419-n4/services/artifactregistry.googleapis.com",
+      "request": {
+        "@type": "type.googleapis.com/google.api.serviceusage.v1.EnableServiceRequest",
+        "name": "projects/jovial-hawk-440419-n4/services/artifactregistry.googleapis.com"
+      }
+    },
+    "insertId": "13gnp7odgnnw",
+    "resource": {
+      "type": "audited_resource",
+      "labels": {
+        "method": "google.api.serviceusage.v1.ServiceUsage.EnableService",
+        "project_id": "jovial-hawk-440419-n4",
+        "service": "serviceusage.googleapis.com"
+      }
+    },
+    "timestamp": "2024-11-01T19:26:32.488942Z",
+    "severity": "NOTICE",
+    "logName": "projects/jovial-hawk-440419-n4/logs/cloudaudit.googleapis.com%2Factivity",
+    "operation": {
+      "id": "operations/acat.p2-953234336406-c7e68dbb-1d89-48e5-8e10-921ae808fb5a",
+      "producer": "serviceusage.googleapis.com",
+      "first": true
+    },
+    "receiveTimestamp": "2024-11-01T19:26:33.178363046Z"
+  },
+  {
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "status": {},
+      "authenticationInfo": {
+        "principalEmail": "dheerajpv487@gmail.com",
+        "principalSubject": "user:dheerajpv487@gmail.com"
+      },
+      "requestMetadata": {
+        "callerIp": "198.44.136.214",
+        "callerSuppliedUserAgent": "google-cloud-sdk gcloud/499.0.0 command/gcloud.services.enable invocation-id/e2c7f2aead154eecb2302da15bc9cb98 environment/None environment-version/None client-os/MACOSX client-os-ver/24.1.0 client-pltf-arch/arm interactive/True from-script/False python/3.11.6 term/xterm-256color (Macintosh; Intel Mac OS X 24.1.0),gzip(gfe)",
+        "requestAttributes": {},
+        "destinationAttributes": {}
+      },
+      "serviceName": "serviceusage.googleapis.com",
+      "methodName": "google.longrunning.Operations.GetOperation",
+      "authorizationInfo": [
+        {
+          "resource": "projectnumbers/953234336406",
+          "permission": "serviceusage.services.enable",
+          "granted": true,
+          "resourceAttributes": {},
+          "permissionType": "ADMIN_WRITE"
+        },
+        {
+          "resource": "projectnumbers/953234336406/operations/-",
+          "permission": "serviceusage.operations.get",
+          "granted": true,
+          "resourceAttributes": {},
+          "permissionType": "DATA_READ"
+        },
+        {
+          "resource": "projectnumbers/953234336406",
+          "permission": "serviceusage.services.get",
+          "granted": true,
+          "resourceAttributes": {},
+          "permissionType": "DATA_READ"
+        }
+      ],
+      "resourceName": "projects/953234336406/operations/acat.p2-953234336406-c7e68dbb-1d89-48e5-8e10-921ae808fb5a"
+    },
+    "insertId": "6o2bqxdc8jh",
+    "resource": {
+      "type": "audited_resource",
+      "labels": {
+        "method": "google.longrunning.Operations.GetOperation",
+        "project_id": "jovial-hawk-440419-n4",
+        "service": "serviceusage.googleapis.com"
+      }
+    },
+    "timestamp": "2024-11-01T19:26:33.435134Z",
+    "severity": "NOTICE",
+    "logName": "projects/jovial-hawk-440419-n4/logs/cloudaudit.googleapis.com%2Factivity",
+    "receiveTimestamp": "2024-11-01T19:26:34.237000024Z"
+  },
+  {
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "status": {},
+      "authenticationInfo": {
+        "principalEmail": "dheerajpv487@gmail.com",
+        "principalSubject": "user:dheerajpv487@gmail.com"
+      },
+      "requestMetadata": {
+        "callerIp": "198.44.136.214",
+        "callerSuppliedUserAgent": "google-cloud-sdk gcloud/499.0.0 command/gcloud.services.enable invocation-id/e2c7f2aead154eecb2302da15bc9cb98 environment/None environment-version/None client-os/MACOSX client-os-ver/24.1.0 client-pltf-arch/arm interactive/True from-script/False python/3.11.6 term/xterm-256color (Macintosh; Intel Mac OS X 24.1.0),gzip(gfe)",
+        "requestAttributes": {},
+        "destinationAttributes": {}
+      },
+      "serviceName": "serviceusage.googleapis.com",
+      "methodName": "google.api.serviceusage.v1.ServiceUsage.EnableService",
+      "authorizationInfo": [
+        {
+          "resource": "projectnumbers/953234336406/services/artifactregistry.googleapis.com",
+          "permission": "serviceusage.services.enable",
+          "granted": true,
+          "resourceAttributes": {},
+          "permissionType": "ADMIN_WRITE"
+        },
+        {
+          "resource": "services/artifactregistry.googleapis.com",
+          "permission": "servicemanagement.services.bind",
+          "granted": true,
+          "resourceAttributes": {},
+          "permissionType": "DATA_WRITE"
+        }
+      ],
+      "resourceName": "projects/jovial-hawk-440419-n4/services/artifactregistry.googleapis.com",
+      "request": {
+        "@type": "type.googleapis.com/google.api.serviceusage.v1.EnableServiceRequest",
+        "name": "projects/jovial-hawk-440419-n4/services/artifactregistry.googleapis.com"
+      },
+      "response": {
+        "service": {
+          "config": {
+            "title": "Artifact Registry API",
+            "name": "artifactregistry.googleapis.com"
+          },
+          "parent": "projects/953234336406",
+          "state": "ENABLED",
+          "name": "projects/953234336406/services/artifactregistry.googleapis.com"
+        },
+        "@type": "type.googleapis.com/google.api.serviceusage.v1.EnableServiceResponse"
+      }
+    },
+    "insertId": "3o7t47d3ile",
+    "resource": {
+      "type": "audited_resource",
+      "labels": {
+        "project_id": "jovial-hawk-440419-n4",
+        "method": "google.api.serviceusage.v1.ServiceUsage.EnableService",
+        "service": "serviceusage.googleapis.com"
+      }
+    },
+    "timestamp": "2024-11-01T19:26:34.901836721Z",
+    "severity": "NOTICE",
+    "logName": "projects/jovial-hawk-440419-n4/logs/cloudaudit.googleapis.com%2Factivity",
+    "operation": {
+      "id": "operations/acat.p2-953234336406-c7e68dbb-1d89-48e5-8e10-921ae808fb5a",
+      "producer": "serviceusage.googleapis.com",
+      "last": true
+    },
+    "receiveTimestamp": "2024-11-01T19:26:34.901836721Z"
+  },
+  {
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "status": {},
+      "authenticationInfo": {
+        "principalEmail": "dheerajpv487@gmail.com",
+        "principalSubject": "user:dheerajpv487@gmail.com"
+      },
+      "requestMetadata": {
+        "callerIp": "198.44.136.214",
+        "callerSuppliedUserAgent": "google-cloud-sdk gcloud/499.0.0 command/gcloud.services.enable invocation-id/e2c7f2aead154eecb2302da15bc9cb98 environment/None environment-version/None client-os/MACOSX client-os-ver/24.1.0 client-pltf-arch/arm interactive/True from-script/False python/3.11.6 term/xterm-256color (Macintosh; Intel Mac OS X 24.1.0),gzip(gfe)",
+        "requestAttributes": {},
+        "destinationAttributes": {}
+      },
+      "serviceName": "serviceusage.googleapis.com",
+      "methodName": "google.longrunning.Operations.GetOperation",
+      "authorizationInfo": [
+        {
+          "resource": "projectnumbers/953234336406",
+          "permission": "serviceusage.services.enable",
+          "granted": true,
+          "resourceAttributes": {},
+          "permissionType": "ADMIN_WRITE"
+        },
+        {
+          "resource": "projectnumbers/953234336406/operations/-",
+          "permission": "serviceusage.operations.get",
+          "granted": true,
+          "resourceAttributes": {},
+          "permissionType": "DATA_READ"
+        },
+        {
+          "resource": "projectnumbers/953234336406",
+          "permission": "serviceusage.services.get",
+          "granted": true,
+          "resourceAttributes": {},
+          "permissionType": "DATA_READ"
+        }
+      ],
+      "resourceName": "projects/953234336406/operations/acat.p2-953234336406-c7e68dbb-1d89-48e5-8e10-921ae808fb5a"
+    },
+    "insertId": "xci7tddbf73",
+    "resource": {
+      "type": "audited_resource",
+      "labels": {
+        "project_id": "jovial-hawk-440419-n4",
+        "method": "google.longrunning.Operations.GetOperation",
+        "service": "serviceusage.googleapis.com"
+      }
+    },
+    "timestamp": "2024-11-01T19:26:36.300691Z",
+    "severity": "NOTICE",
+    "logName": "projects/jovial-hawk-440419-n4/logs/cloudaudit.googleapis.com%2Factivity",
+    "receiveTimestamp": "2024-11-01T19:26:36.833863112Z"
+  },
+  {
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "authenticationInfo": {
+        "principalEmail": "dheerajpv487@gmail.com",
+        "principalSubject": "user:dheerajpv487@gmail.com"
+      },
+      "requestMetadata": {
+        "callerIp": "198.44.136.214",
+        "callerSuppliedUserAgent": "google-cloud-sdk gcloud/499.0.0 command/gcloud.artifacts.repositories.create invocation-id/7c6ccb50fee74dc0a1cf48780766c602 environment/None environment-version/None client-os/MACOSX client-os-ver/24.1.0 client-pltf-arch/arm interactive/True from-script/False python/3.11.6 term/xterm-256color (Macintosh; Intel Mac OS X 24.1.0),gzip(gfe),gzip(gfe)",
+        "requestAttributes": {
+          "time": "2024-11-01T19:33:26.780404220Z",
+          "auth": {}
+        },
+        "destinationAttributes": {}
+      },
+      "serviceName": "artifactregistry.googleapis.com",
+      "methodName": "google.devtools.artifactregistry.v1.ArtifactRegistry.CreateRepository",
+      "authorizationInfo": [
+        {
+          "resource": "projects/jovial-hawk-440419-n4/locations/us-central1",
+          "permission": "artifactregistry.repositories.create",
+          "granted": true,
+          "resourceAttributes": {},
+          "permissionType": "ADMIN_WRITE"
+        }
+      ],
+      "resourceName": "projects/jovial-hawk-440419-n4/locations/us-central1",
+      "request": {
+        "@type": "type.googleapis.com/google.devtools.artifactregistry.v1.CreateRepositoryRequest",
+        "repository": {
+          "dockerConfig": {
+            "immutableTags": true
+          },
+          "name": "projects/jovial-hawk-440419-n4/locations/us-central1/repositories/my-docker-repo",
+          "format": "DOCKER"
+        },
+        "parent": "projects/jovial-hawk-440419-n4/locations/us-central1",
+        "repositoryId": "my-docker-repo"
+      },
+      "resourceLocation": {
+        "currentLocations": [
+          "us-central1"
+        ]
+      }
+    },
+    "insertId": "r97vfyc8aj",
+    "resource": {
+      "type": "audited_resource",
+      "labels": {
+        "method": "google.devtools.artifactregistry.v1.ArtifactRegistry.CreateRepository",
+        "project_id": "jovial-hawk-440419-n4",
+        "service": "artifactregistry.googleapis.com"
+      }
+    },
+    "timestamp": "2024-11-01T19:33:26.769757955Z",
+    "severity": "NOTICE",
+    "logName": "projects/jovial-hawk-440419-n4/logs/cloudaudit.googleapis.com%2Factivity",
+    "operation": {
+      "id": "projects/jovial-hawk-440419-n4/locations/us-central1/operations/d4678ec0-684a-4baf-aa63-43f8e633abbc",
+      "producer": "artifactregistry.googleapis.com",
+      "first": true
+    },
+    "receiveTimestamp": "2024-11-01T19:33:27.183530888Z"
+  },
+  {
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "status": {},
+      "authenticationInfo": {
+        "principalEmail": "dheerajpv487@gmail.com",
+        "principalSubject": "user:dheerajpv487@gmail.com"
+      },
+      "requestMetadata": {
+        "requestAttributes": {},
+        "destinationAttributes": {}
+      },
+      "serviceName": "artifactregistry.googleapis.com",
+      "methodName": "google.devtools.artifactregistry.v1.ArtifactRegistry.CreateRepository",
+      "resourceName": "projects/jovial-hawk-440419-n4/locations/us-central1/repositories/my-docker-repo",
+      "response": {
+        "description": "Docker repository for project artifacts",
+        "dockerConfig": {
+          "immutableTags": true
+        },
+        "format": "DOCKER",
+        "name": "projects/jovial-hawk-440419-n4/locations/us-central1/repositories/my-docker-repo",
+        "sbomConfig": {},
+        "vulnerabilityScanningConfig": {
+          "lastEnableTime": "2024-11-01T19:33:26.792011948Z"
+        },
+        "@type": "type.googleapis.com/google.protobuf.Any",
+        "mode": "STANDARD_REPOSITORY"
+      }
+    },
+    "insertId": "5l8h8mdjfog",
+    "resource": {
+      "type": "audited_resource",
+      "labels": {
+        "method": "google.devtools.artifactregistry.v1.ArtifactRegistry.CreateRepository",
+        "project_id": "jovial-hawk-440419-n4",
+        "service": "artifactregistry.googleapis.com"
+      }
+    },
+    "timestamp": "2024-11-01T19:33:35.752118001Z",
+    "severity": "NOTICE",
+    "logName": "projects/jovial-hawk-440419-n4/logs/cloudaudit.googleapis.com%2Factivity",
+    "operation": {
+      "id": "projects/jovial-hawk-440419-n4/locations/us-central1/operations/d4678ec0-684a-4baf-aa63-43f8e633abbc",
+      "producer": "artifactregistry.googleapis.com",
+      "last": true
+    },
+    "receiveTimestamp": "2024-11-01T19:33:35.769626857Z"
+  },
+  {
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "status": {
+        "code": 3,
+        "message": "Invalid WorkloadIdentityPool ID. It can only consist of digits [0-9], lowercase characters [a-z], dashes [-], and must be between 4 and 32 characters in length."
+      },
+      "authenticationInfo": {
+        "principalEmail": "dheerajpv487@gmail.com",
+        "principalSubject": "user:dheerajpv487@gmail.com"
+      },
+      "requestMetadata": {
+        "callerIp": "198.44.136.214",
+        "callerSuppliedUserAgent": "google-cloud-sdk gcloud/499.0.0 command/gcloud.iam.workload-identity-pools.create invocation-id/a189d19402bf4300ad99580d7ff56144 environment/None environment-version/None client-os/MACOSX client-os-ver/24.1.0 client-pltf-arch/arm interactive/True from-script/False python/3.11.6 term/xterm-256color (Macintosh; Intel Mac OS X 24.1.0),gzip(gfe)",
+        "requestAttributes": {
+          "time": "2024-11-01T19:45:45.224416716Z",
+          "auth": {}
+        },
+        "destinationAttributes": {}
+      },
+      "serviceName": "iam.googleapis.com",
+      "methodName": "google.iam.v1.WorkloadIdentityPools.CreateWorkloadIdentityPool",
+      "authorizationInfo": [
+        {
+          "resource": "projects/jovial-hawk-440419-n4/locations/global",
+          "permission": "iam.workloadIdentityPools.create",
+          "granted": true,
+          "resourceAttributes": {},
+          "permissionType": "ADMIN_WRITE"
+        }
+      ],
+      "resourceName": "projects/jovial-hawk-440419-n4/locations/global",
+      "request": {
+        "workloadIdentityPoolId": "B_P",
+        "workloadIdentityPool": {
+          "description": "Pool for GitHub Actions integration",
+          "disabled": false
+        },
+        "parent": "projects/jovial-hawk-440419-n4/locations/global",
+        "@type": "type.googleapis.com/google.iam.v1.CreateWorkloadIdentityPoolRequest"
+      },
+      "resourceLocation": {
+        "currentLocations": [
+          "global"
+        ]
+      }
+    },
+    "insertId": "w8xhawd92vs",
+    "resource": {
+      "type": "audited_resource",
+      "labels": {
+        "service": "iam.googleapis.com",
+        "project_id": "jovial-hawk-440419-n4",
+        "method": "google.iam.v1.WorkloadIdentityPools.CreateWorkloadIdentityPool"
+      }
+    },
+    "timestamp": "2024-11-01T19:45:45.216432797Z",
+    "severity": "ERROR",
+    "logName": "projects/jovial-hawk-440419-n4/logs/cloudaudit.googleapis.com%2Factivity",
+    "receiveTimestamp": "2024-11-01T19:45:45.233907284Z"
+  },
+  {
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "authenticationInfo": {
+        "principalEmail": "dheerajpv487@gmail.com",
+        "principalSubject": "user:dheerajpv487@gmail.com"
+      },
+      "requestMetadata": {
+        "callerIp": "198.44.136.214",
+        "callerSuppliedUserAgent": "google-cloud-sdk gcloud/499.0.0 command/gcloud.iam.workload-identity-pools.create invocation-id/9b8324b7a2014f2093429348327e5449 environment/None environment-version/None client-os/MACOSX client-os-ver/24.1.0 client-pltf-arch/arm interactive/True from-script/False python/3.11.6 term/xterm-256color (Macintosh; Intel Mac OS X 24.1.0),gzip(gfe)",
+        "requestAttributes": {
+          "time": "2024-11-01T19:47:10.927392629Z",
+          "auth": {}
+        },
+        "destinationAttributes": {}
+      },
+      "serviceName": "iam.googleapis.com",
+      "methodName": "google.iam.v1.WorkloadIdentityPools.CreateWorkloadIdentityPool",
+      "authorizationInfo": [
+        {
+          "resource": "projects/jovial-hawk-440419-n4/locations/global",
+          "permission": "iam.workloadIdentityPools.create",
+          "granted": true,
+          "resourceAttributes": {},
+          "permissionType": "ADMIN_WRITE"
+        }
+      ],
+      "resourceName": "projects/jovial-hawk-440419-n4/locations/global",
+      "request": {
+        "parent": "projects/jovial-hawk-440419-n4/locations/global",
+        "workloadIdentityPool": {
+          "disabled": false,
+          "description": "Pool for GitHub Actions integration"
+        },
+        "workloadIdentityPoolId": "build3",
+        "@type": "type.googleapis.com/google.iam.v1.CreateWorkloadIdentityPoolRequest"
+      },
+      "resourceLocation": {
+        "currentLocations": [
+          "global"
+        ]
+      }
+    },
+    "insertId": "n1ylxfdc0kk",
+    "resource": {
+      "type": "audited_resource",
+      "labels": {
+        "method": "google.iam.v1.WorkloadIdentityPools.CreateWorkloadIdentityPool",
+        "project_id": "jovial-hawk-440419-n4",
+        "service": "iam.googleapis.com"
+      }
+    },
+    "timestamp": "2024-11-01T19:47:10.916589584Z",
+    "severity": "NOTICE",
+    "logName": "projects/jovial-hawk-440419-n4/logs/cloudaudit.googleapis.com%2Factivity",
+    "operation": {
+      "id": "projects/953234336406/locations/global/workloadIdentityPools/build3/operations/bifqrp7ass4qmegi7xyfk00000000000",
+      "producer": "iam.googleapis.com",
+      "first": true
+    },
+    "receiveTimestamp": "2024-11-01T19:47:11.493422173Z"
+  },
+  {
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "authenticationInfo": {
+        "principalEmail": "dheerajpv487@gmail.com",
+        "principalSubject": "user:dheerajpv487@gmail.com"
+      },
+      "requestMetadata": {
+        "requestAttributes": {},
+        "destinationAttributes": {}
+      },
+      "serviceName": "iam.googleapis.com",
+      "methodName": "google.iam.v1.WorkloadIdentityPools.CreateWorkloadIdentityPool",
+      "resourceName": "projects/jovial-hawk-440419-n4/locations/global",
+      "response": {
+        "name": "projects/953234336406/locations/global/workloadIdentityPools/build3/operations/bifqrp7ass4qmegi7xyfk00000000000",
+        "@type": "type.googleapis.com/google.longrunning.Operation"
+      }
+    },
+    "insertId": "vyoaoccast",
+    "resource": {
+      "type": "audited_resource",
+      "labels": {
+        "project_id": "jovial-hawk-440419-n4",
+        "service": "iam.googleapis.com",
+        "method": "google.iam.v1.WorkloadIdentityPools.CreateWorkloadIdentityPool"
+      }
+    },
+    "timestamp": "2024-11-01T19:47:11.315851Z",
+    "severity": "NOTICE",
+    "logName": "projects/jovial-hawk-440419-n4/logs/cloudaudit.googleapis.com%2Factivity",
+    "operation": {
+      "id": "projects/953234336406/locations/global/workloadIdentityPools/build3/operations/bifqrp7ass4qmegi7xyfk00000000000",
+      "producer": "iam.googleapis.com",
+      "last": true
+    },
+    "receiveTimestamp": "2024-11-01T19:47:12.001483436Z"
+  },
+  {
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "status": {
+        "code": 3,
+        "message": "The attribute condition must reference one of the provider's claims. For more information, see https://cloud.google.com/iam/docs/workload-identity-federation-with-deployment-pipelines#conditions"
+      },
+      "authenticationInfo": {
+        "principalEmail": "dheerajpv487@gmail.com",
+        "principalSubject": "user:dheerajpv487@gmail.com"
+      },
+      "requestMetadata": {
+        "callerIp": "198.44.136.214",
+        "callerSuppliedUserAgent": "google-cloud-sdk gcloud/499.0.0 command/gcloud.iam.workload-identity-pools.providers.create-oidc invocation-id/9241b81272db4e88a20a307aba4d5911 environment/None environment-version/None client-os/MACOSX client-os-ver/24.1.0 client-pltf-arch/arm interactive/True from-script/False python/3.11.6 term/xterm-256color (Macintosh; Intel Mac OS X 24.1.0),gzip(gfe)",
+        "requestAttributes": {
+          "time": "2024-11-01T19:49:10.822774568Z",
+          "auth": {}
+        },
+        "destinationAttributes": {}
+      },
+      "serviceName": "iam.googleapis.com",
+      "methodName": "google.iam.v1.WorkloadIdentityPools.CreateWorkloadIdentityPoolProvider",
+      "authorizationInfo": [
+        {
+          "resource": "projects/jovial-hawk-440419-n4/locations/global/workloadIdentityPools/build3",
+          "permission": "iam.workloadIdentityPoolProviders.create",
+          "granted": true,
+          "resourceAttributes": {},
+          "permissionType": "ADMIN_WRITE"
+        }
+      ],
+      "resourceName": "projects/jovial-hawk-440419-n4/locations/global/workloadIdentityPools/build3",
+      "request": {
+        "@type": "type.googleapis.com/google.iam.v1.CreateWorkloadIdentityPoolProviderRequest",
+        "workloadIdentityPoolProvider": {
+          "oidc": {
+            "issuerUri": "https://token.actions.githubusercontent.com",
+            "allowedAudiences": [
+              "jovial-hawk-440419-n4"
+            ]
+          },
+          "displayName": "GitHub Actions OIDC Provider",
+          "disabled": false,
+          "attributeMapping": {
+            "attribute.repository": "assertion.repository",
+            "google.subject": "assertion.sub"
+          }
+        },
+        "parent": "projects/jovial-hawk-440419-n4/locations/global/workloadIdentityPools/build3",
+        "workloadIdentityPoolProviderId": "git3"
+      },
+      "resourceLocation": {
+        "currentLocations": [
+          "global"
+        ]
+      }
+    },
+    "insertId": "6xs7wvd9mn3",
+    "resource": {
+      "type": "audited_resource",
+      "labels": {
+        "method": "google.iam.v1.WorkloadIdentityPools.CreateWorkloadIdentityPoolProvider",
+        "project_id": "jovial-hawk-440419-n4",
+        "service": "iam.googleapis.com"
+      }
+    },
+    "timestamp": "2024-11-01T19:49:10.806020700Z",
+    "severity": "ERROR",
+    "logName": "projects/jovial-hawk-440419-n4/logs/cloudaudit.googleapis.com%2Factivity",
+    "receiveTimestamp": "2024-11-01T19:49:11.634906217Z"
+  },
+  {
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "authenticationInfo": {
+        "principalEmail": "dheerajpv487@gmail.com",
+        "principalSubject": "user:dheerajpv487@gmail.com"
+      },
+      "requestMetadata": {
+        "callerIp": "198.44.136.214",
+        "callerSuppliedUserAgent": "google-cloud-sdk gcloud/499.0.0 command/gcloud.iam.workload-identity-pools.providers.create-oidc invocation-id/9d8edc3d132d4f808d361706f865f610 environment/None environment-version/None client-os/MACOSX client-os-ver/24.1.0 client-pltf-arch/arm interactive/True from-script/False python/3.11.6 term/xterm-256color (Macintosh; Intel Mac OS X 24.1.0),gzip(gfe)",
+        "requestAttributes": {
+          "time": "2024-11-01T19:55:00.056814013Z",
+          "auth": {}
+        },
+        "destinationAttributes": {}
+      },
+      "serviceName": "iam.googleapis.com",
+      "methodName": "google.iam.v1.WorkloadIdentityPools.CreateWorkloadIdentityPoolProvider",
+      "authorizationInfo": [
+        {
+          "resource": "projects/jovial-hawk-440419-n4/locations/global/workloadIdentityPools/build3",
+          "permission": "iam.workloadIdentityPoolProviders.create",
+          "granted": true,
+          "resourceAttributes": {},
+          "permissionType": "ADMIN_WRITE"
+        }
+      ],
+      "resourceName": "projects/jovial-hawk-440419-n4/locations/global/workloadIdentityPools/build3",
+      "request": {
+        "workloadIdentityPoolProvider": {
+          "disabled": false,
+          "displayName": "GitHub OIDC Provider",
+          "oidc": {
+            "issuerUri": "https://token.actions.githubusercontent.com"
+          },
+          "attributeMapping": {
+            " attribute.actor": "assertion.actor",
+            "google.subject": "assertion.sub",
+            " attribute.repository": "assertion.repository",
+            " attribute.repository_owner": "assertion.repository_owner"
+          },
+          "attributeCondition": "attribute.repository_owner=='pitt-cs-1660'"
+        },
+        "parent": "projects/jovial-hawk-440419-n4/locations/global/workloadIdentityPools/build3",
+        "@type": "type.googleapis.com/google.iam.v1.CreateWorkloadIdentityPoolProviderRequest",
+        "workloadIdentityPoolProviderId": "git3"
+      },
+      "resourceLocation": {
+        "currentLocations": [
+          "global"
+        ]
+      }
+    },
+    "insertId": "6xs7wvd9neh",
+    "resource": {
+      "type": "audited_resource",
+      "labels": {
+        "service": "iam.googleapis.com",
+        "project_id": "jovial-hawk-440419-n4",
+        "method": "google.iam.v1.WorkloadIdentityPools.CreateWorkloadIdentityPoolProvider"
+      }
+    },
+    "timestamp": "2024-11-01T19:55:00.037628516Z",
+    "severity": "NOTICE",
+    "logName": "projects/jovial-hawk-440419-n4/logs/cloudaudit.googleapis.com%2Factivity",
+    "operation": {
+      "id": "projects/953234336406/locations/global/workloadIdentityPools/build3/providers/git3/operations/bifqrfhess4qmegirtvx600000000000",
+      "producer": "iam.googleapis.com",
+      "first": true
+    },
+    "receiveTimestamp": "2024-11-01T19:55:01.243724065Z"
+  },
+  {
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "authenticationInfo": {
+        "principalEmail": "dheerajpv487@gmail.com",
+        "principalSubject": "user:dheerajpv487@gmail.com"
+      },
+      "requestMetadata": {
+        "requestAttributes": {},
+        "destinationAttributes": {}
+      },
+      "serviceName": "iam.googleapis.com",
+      "methodName": "google.iam.v1.WorkloadIdentityPools.CreateWorkloadIdentityPoolProvider",
+      "resourceName": "projects/jovial-hawk-440419-n4/locations/global/workloadIdentityPools/build3",
+      "response": {
+        "@type": "type.googleapis.com/google.longrunning.Operation",
+        "name": "projects/953234336406/locations/global/workloadIdentityPools/build3/providers/git3/operations/bifqrfhess4qmegirtvx600000000000"
+      }
+    },
+    "insertId": "-frui8rc145",
+    "resource": {
+      "type": "audited_resource",
+      "labels": {
+        "project_id": "jovial-hawk-440419-n4",
+        "method": "google.iam.v1.WorkloadIdentityPools.CreateWorkloadIdentityPoolProvider",
+        "service": "iam.googleapis.com"
+      }
+    },
+    "timestamp": "2024-11-01T19:55:00.269161Z",
+    "severity": "NOTICE",
+    "logName": "projects/jovial-hawk-440419-n4/logs/cloudaudit.googleapis.com%2Factivity",
+    "operation": {
+      "id": "projects/953234336406/locations/global/workloadIdentityPools/build3/providers/git3/operations/bifqrfhess4qmegirtvx600000000000",
+      "producer": "iam.googleapis.com",
+      "last": true
+    },
+    "receiveTimestamp": "2024-11-01T19:55:00.618959898Z"
+  },
+  {
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "status": {
+        "code": 3,
+        "message": "Identity Pool does not exist (projects/124836985683/locations/global/workloadIdentityPools/build3). Please check that you specified a valid resource name as returned in the `name` attribute in the configuration API."
+      },
+      "authenticationInfo": {
+        "principalEmail": "dheerajpv487@gmail.com",
+        "principalSubject": "user:dheerajpv487@gmail.com"
+      },
+      "requestMetadata": {
+        "callerIp": "198.44.136.214",
+        "callerSuppliedUserAgent": "google-cloud-sdk gcloud/499.0.0 command/gcloud.artifacts.repositories.add-iam-policy-binding invocation-id/4728381e734543a089a08b6e1a27ef61 environment/None environment-version/None client-os/MACOSX client-os-ver/24.1.0 client-pltf-arch/arm interactive/True from-script/False python/3.11.6 term/xterm-256color (Macintosh; Intel Mac OS X 24.1.0),gzip(gfe),gzip(gfe)",
+        "requestAttributes": {
+          "time": "2024-11-01T20:09:18.549974232Z",
+          "auth": {}
+        },
+        "destinationAttributes": {}
+      },
+      "serviceName": "artifactregistry.googleapis.com",
+      "methodName": "google.devtools.artifactregistry.v1.ArtifactRegistry.SetIamPolicy",
+      "authorizationInfo": [
+        {
+          "resource": "projects/jovial-hawk-440419-n4/locations/us-central1/repositories/my-docker-repo",
+          "permission": "artifactregistry.repositories.setIamPolicy",
+          "granted": true,
+          "resourceAttributes": {},
+          "permissionType": "ADMIN_WRITE"
+        }
+      ],
+      "resourceName": "projects/jovial-hawk-440419-n4/locations/us-central1/repositories/my-docker-repo",
+      "request": {
+        "resource": "projects/jovial-hawk-440419-n4/locations/us-central1/repositories/my-docker-repo",
+        "@type": "type.googleapis.com/google.iam.v1.SetIamPolicyRequest"
+      }
+    },
+    "insertId": "egm9c8d2upq",
+    "resource": {
+      "type": "audited_resource",
+      "labels": {
+        "service": "artifactregistry.googleapis.com",
+        "method": "google.devtools.artifactregistry.v1.ArtifactRegistry.SetIamPolicy",
+        "project_id": "jovial-hawk-440419-n4"
+      }
+    },
+    "timestamp": "2024-11-01T20:09:18.540278964Z",
+    "severity": "ERROR",
+    "logName": "projects/jovial-hawk-440419-n4/logs/cloudaudit.googleapis.com%2Factivity",
+    "receiveTimestamp": "2024-11-01T20:09:19.427709109Z"
+  },
+  {
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "authenticationInfo": {
+        "principalEmail": "dheerajpv487@gmail.com",
+        "principalSubject": "user:dheerajpv487@gmail.com"
+      },
+      "requestMetadata": {
+        "callerIp": "198.44.136.214",
+        "callerSuppliedUserAgent": "google-cloud-sdk gcloud/499.0.0 command/gcloud.artifacts.repositories.add-iam-policy-binding invocation-id/955e44f9140f4400a958598e69113d1b environment/None environment-version/None client-os/MACOSX client-os-ver/24.1.0 client-pltf-arch/arm interactive/True from-script/False python/3.11.6 term/xterm-256color (Macintosh; Intel Mac OS X 24.1.0),gzip(gfe),gzip(gfe)",
+        "requestAttributes": {
+          "time": "2024-11-01T20:12:15.530356538Z",
+          "auth": {}
+        },
+        "destinationAttributes": {}
+      },
+      "serviceName": "artifactregistry.googleapis.com",
+      "methodName": "google.devtools.artifactregistry.v1.ArtifactRegistry.SetIamPolicy",
+      "authorizationInfo": [
+        {
+          "resource": "projects/jovial-hawk-440419-n4/locations/us-central1/repositories/my-docker-repo",
+          "permission": "artifactregistry.repositories.setIamPolicy",
+          "granted": true,
+          "resourceAttributes": {},
+          "permissionType": "ADMIN_WRITE"
+        }
+      ],
+      "resourceName": "projects/jovial-hawk-440419-n4/locations/us-central1/repositories/my-docker-repo",
+      "request": {
+        "@type": "type.googleapis.com/google.iam.v1.SetIamPolicyRequest",
+        "resource": "projects/jovial-hawk-440419-n4/locations/us-central1/repositories/my-docker-repo"
+      },
+      "response": {
+        "@type": "type.googleapis.com/google.iam.v1.Policy"
+      }
+    },
+    "insertId": "t65a6wc8vk",
+    "resource": {
+      "type": "audited_resource",
+      "labels": {
+        "method": "google.devtools.artifactregistry.v1.ArtifactRegistry.SetIamPolicy",
+        "project_id": "jovial-hawk-440419-n4",
+        "service": "artifactregistry.googleapis.com"
+      }
+    },
+    "timestamp": "2024-11-01T20:12:15.519561610Z",
+    "severity": "NOTICE",
+    "logName": "projects/jovial-hawk-440419-n4/logs/cloudaudit.googleapis.com%2Factivity",
+    "receiveTimestamp": "2024-11-01T20:12:16.401884156Z"
+  }
+]
