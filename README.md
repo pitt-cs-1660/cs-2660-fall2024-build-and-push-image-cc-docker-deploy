@@ -71,7 +71,7 @@ You will submit your GitHub project link to Canvas. Ensure that the following ar
 - **logging.json**: Exported logs of GCP activity (from the Logging service in GCP). This will show the actions performed during the creation of the registry and the setup of Workload Identity Federation.
 - **metrics.csv**: Exported metrics data from Workload Identity Pools (found under IAM > Workload Identity Federation > ellipsis on graph > "View In Metrics Explorer" > Download). This will provide insight into authentication metrics for your workload identity.
 
-You must have all your files merged to `main`. 
+You must have all your files merged to `main`
 
 ## Helpful commands
 
