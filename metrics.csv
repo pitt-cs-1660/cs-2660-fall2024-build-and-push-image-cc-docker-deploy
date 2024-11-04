@@ -1,0 +1,14 @@
+TimeSeries ID,workload_identity_federation/count.iam.googleapis.com/WorkloadIdentityPoolProvider.ALIGN_RATE.REDUCE_SUM.metric.type="iam.googleapis.com/workload_identity_federation/count" resource.type="iam.googleapis.com/WorkloadIdentityPoolProvider".60s.project_id:hw3-cs2060
+project_id,hw3-cs2060
+Wed Oct 30 2024 17:17:00 GMT-0400 (Eastern Daylight Time),0.05888875925709873
+Wed Oct 30 2024 17:18:00 GMT-0400 (Eastern Daylight Time),0.007777907409567934
+Wed Oct 30 2024 17:38:00 GMT-0400 (Eastern Daylight Time),0.05888875925709873
+Wed Oct 30 2024 17:39:00 GMT-0400 (Eastern Daylight Time),0.007777907409567934
+Wed Oct 30 2024 17:45:00 GMT-0400 (Eastern Daylight Time),0.01472218981427468
+Wed Oct 30 2024 17:46:00 GMT-0400 (Eastern Daylight Time),0.046111046295216035
+Wed Oct 30 2024 17:47:00 GMT-0400 (Eastern Daylight Time),0.005833430557175948
+Wed Oct 30 2024 17:49:00 GMT-0400 (Eastern Daylight Time),0.05888875925709873
+Wed Oct 30 2024 17:50:00 GMT-0400 (Eastern Daylight Time),0.007777907409567934
+Wed Oct 30 2024 18:10:00 GMT-0400 (Eastern Daylight Time),0.01472218981427468
+Wed Oct 30 2024 18:11:00 GMT-0400 (Eastern Daylight Time),0.046111046295216035
+Wed Oct 30 2024 18:12:00 GMT-0400 (Eastern Daylight Time),0.005833430557175948
