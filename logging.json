@@ -1,0 +1,264 @@
+[
+  {
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "authenticationInfo": {
+        "principalEmail": "kevivtest@gmail.com",
+        "principalSubject": "user:kevivtest@gmail.com"
+      },
+      "requestMetadata": {
+        "callerIp": "34.138.52.113",
+        "callerSuppliedUserAgent": "google-cloud-sdk gcloud/498.0.0 command/gcloud.iam.workload-identity-pools.providers.create-oidc invocation-id/0c10ce7d32da4cc79627ea3cce64ec7b environment/devshell environment-version/None client-os/LINUX client-os-ver/6.1.112 client-pltf-arch/x86_64 interactive/True from-script/False python/3.11.9 term/screen (Linux 6.1.112+),gzip(gfe)",
+        "requestAttributes": {
+          "time": "2024-10-30T20:19:35.639386285Z",
+          "auth": {}
+        },
+        "destinationAttributes": {}
+      },
+      "serviceName": "iam.googleapis.com",
+      "methodName": "google.iam.v1.WorkloadIdentityPools.CreateWorkloadIdentityPoolProvider",
+      "authorizationInfo": [
+        {
+          "resource": "projects/hw3-cs2060/locations/global/workloadIdentityPools/github",
+          "permission": "iam.workloadIdentityPoolProviders.create",
+          "granted": true,
+          "resourceAttributes": {},
+          "permissionType": "ADMIN_WRITE"
+        }
+      ],
+      "resourceName": "projects/hw3-cs2060/locations/global/workloadIdentityPools/github",
+      "request": {
+        "workloadIdentityPoolProviderId": "build-and-push-image-naruto-sai",
+        "parent": "projects/hw3-cs2060/locations/global/workloadIdentityPools/github",
+        "workloadIdentityPoolProvider": {
+          "attributeMapping": {
+            "attribute.repository": "assertion.repository",
+            "attribute.repository_owner": "assertion.repository_owner",
+            "attribute.actor": "assertion.actor",
+            "google.subject": "assertion.sub"
+          },
+          "attributeCondition": "assertion.repository_owner == 'pitt-cs-1660'",
+          "displayName": "My github Provider",
+          "disabled": false,
+          "oidc": {
+            "issuerUri": "https://token.actions.githubusercontent.com"
+          }
+        },
+        "@type": "type.googleapis.com/google.iam.v1.CreateWorkloadIdentityPoolProviderRequest"
+      },
+      "resourceLocation": {
+        "currentLocations": [
+          "global"
+        ]
+      }
+    },
+    "insertId": "qo5xghd2w55",
+    "resource": {
+      "type": "audited_resource",
+      "labels": {
+        "project_id": "hw3-cs2060",
+        "method": "google.iam.v1.WorkloadIdentityPools.CreateWorkloadIdentityPoolProvider",
+        "service": "iam.googleapis.com"
+      }
+    },
+    "timestamp": "2024-10-30T20:19:35.619269389Z",
+    "severity": "NOTICE",
+    "logName": "projects/hw3-cs2060/logs/cloudaudit.googleapis.com%2Factivity",
+    "operation": {
+      "id": "projects/253436868674/locations/global/workloadIdentityPools/github/providers/build-and-push-image-naruto-sai/operations/bifqrwfjrk4qmehirk5bm00000000000",
+      "producer": "iam.googleapis.com",
+      "first": true
+    },
+    "receiveTimestamp": "2024-10-30T20:19:36.316575787Z"
+  },
+  {
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "authenticationInfo": {
+        "principalEmail": "kevivtest@gmail.com",
+        "principalSubject": "user:kevivtest@gmail.com"
+      },
+      "requestMetadata": {
+        "requestAttributes": {},
+        "destinationAttributes": {}
+      },
+      "serviceName": "iam.googleapis.com",
+      "methodName": "google.iam.v1.WorkloadIdentityPools.CreateWorkloadIdentityPoolProvider",
+      "resourceName": "projects/hw3-cs2060/locations/global/workloadIdentityPools/github",
+      "response": {
+        "@type": "type.googleapis.com/google.longrunning.Operation",
+        "name": "projects/253436868674/locations/global/workloadIdentityPools/github/providers/build-and-push-image-naruto-sai/operations/bifqrwfjrk4qmehirk5bm00000000000"
+      }
+    },
+    "insertId": "auztircg2g",
+    "resource": {
+      "type": "audited_resource",
+      "labels": {
+        "method": "google.iam.v1.WorkloadIdentityPools.CreateWorkloadIdentityPoolProvider",
+        "project_id": "hw3-cs2060",
+        "service": "iam.googleapis.com"
+      }
+    },
+    "timestamp": "2024-10-30T20:19:36.047795Z",
+    "severity": "NOTICE",
+    "logName": "projects/hw3-cs2060/logs/cloudaudit.googleapis.com%2Factivity",
+    "operation": {
+      "id": "projects/253436868674/locations/global/workloadIdentityPools/github/providers/build-and-push-image-naruto-sai/operations/bifqrwfjrk4qmehirk5bm00000000000",
+      "producer": "iam.googleapis.com",
+      "last": true
+    },
+    "receiveTimestamp": "2024-10-30T20:19:36.536801983Z"
+  },
+  {
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "status": {
+        "code": 3,
+        "message": "Invalid principalSet member (principalSet://iam.googleapis.com/projects/253436868674/locations/global/workloadIdentityPools/github/providers/build-and-push-image-naruto-sai/attribute.repository/pitt-cs-1660/build-and-push-image-naruto-sai)."
+      },
+      "authenticationInfo": {
+        "principalEmail": "kevivtest@gmail.com",
+        "principalSubject": "user:kevivtest@gmail.com"
+      },
+      "requestMetadata": {
+        "callerIp": "34.138.52.113",
+        "callerSuppliedUserAgent": "google-cloud-sdk gcloud/498.0.0 command/gcloud.artifacts.repositories.add-iam-policy-binding invocation-id/1628bb69f1f847e38f56af025bda4cd3 environment/devshell environment-version/None client-os/LINUX client-os-ver/6.1.112 client-pltf-arch/x86_64 interactive/True from-script/False python/3.11.9 term/screen (Linux 6.1.112+),gzip(gfe),gzip(gfe)",
+        "requestAttributes": {
+          "time": "2024-10-30T20:53:03.629422340Z",
+          "auth": {}
+        },
+        "destinationAttributes": {}
+      },
+      "serviceName": "artifactregistry.googleapis.com",
+      "methodName": "google.devtools.artifactregistry.v1.ArtifactRegistry.SetIamPolicy",
+      "authorizationInfo": [
+        {
+          "resource": "projects/hw3-cs2060/locations/us-central1/repositories/iam-perms-mgmt",
+          "permission": "artifactregistry.repositories.setIamPolicy",
+          "granted": true,
+          "resourceAttributes": {},
+          "permissionType": "ADMIN_WRITE"
+        }
+      ],
+      "resourceName": "projects/hw3-cs2060/locations/us-central1/repositories/iam-perms-mgmt",
+      "request": {
+        "resource": "projects/hw3-cs2060/locations/us-central1/repositories/iam-perms-mgmt",
+        "@type": "type.googleapis.com/google.iam.v1.SetIamPolicyRequest"
+      }
+    },
+    "insertId": "6zdz80d25dx",
+    "resource": {
+      "type": "audited_resource",
+      "labels": {
+        "project_id": "hw3-cs2060",
+        "service": "artifactregistry.googleapis.com",
+        "method": "google.devtools.artifactregistry.v1.ArtifactRegistry.SetIamPolicy"
+      }
+    },
+    "timestamp": "2024-10-30T20:53:03.616187390Z",
+    "severity": "ERROR",
+    "logName": "projects/hw3-cs2060/logs/cloudaudit.googleapis.com%2Factivity",
+    "receiveTimestamp": "2024-10-30T20:53:04.199615693Z"
+  },
+  {
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "status": {
+        "code": 3,
+        "message": "Role roles/secretmanager.secretAccessor is not supported for this resource."
+      },
+      "authenticationInfo": {
+        "principalEmail": "kevivtest@gmail.com",
+        "principalSubject": "user:kevivtest@gmail.com"
+      },
+      "requestMetadata": {
+        "callerIp": "34.138.52.113",
+        "callerSuppliedUserAgent": "google-cloud-sdk gcloud/498.0.0 command/gcloud.artifacts.repositories.add-iam-policy-binding invocation-id/d07269d29843482596b7fe9af2cd0d67 environment/devshell environment-version/None client-os/LINUX client-os-ver/6.1.112 client-pltf-arch/x86_64 interactive/True from-script/False python/3.11.9 term/screen (Linux 6.1.112+),gzip(gfe),gzip(gfe)",
+        "requestAttributes": {
+          "time": "2024-10-30T20:54:47.923693801Z",
+          "auth": {}
+        },
+        "destinationAttributes": {}
+      },
+      "serviceName": "artifactregistry.googleapis.com",
+      "methodName": "google.devtools.artifactregistry.v1.ArtifactRegistry.SetIamPolicy",
+      "authorizationInfo": [
+        {
+          "resource": "projects/hw3-cs2060/locations/us-central1/repositories/iam-perms-mgmt",
+          "permission": "artifactregistry.repositories.setIamPolicy",
+          "granted": true,
+          "resourceAttributes": {},
+          "permissionType": "ADMIN_WRITE"
+        }
+      ],
+      "resourceName": "projects/hw3-cs2060/locations/us-central1/repositories/iam-perms-mgmt",
+      "request": {
+        "@type": "type.googleapis.com/google.iam.v1.SetIamPolicyRequest",
+        "resource": "projects/hw3-cs2060/locations/us-central1/repositories/iam-perms-mgmt"
+      }
+    },
+    "insertId": "1o87eaqd1z5y",
+    "resource": {
+      "type": "audited_resource",
+      "labels": {
+        "service": "artifactregistry.googleapis.com",
+        "project_id": "hw3-cs2060",
+        "method": "google.devtools.artifactregistry.v1.ArtifactRegistry.SetIamPolicy"
+      }
+    },
+    "timestamp": "2024-10-30T20:54:47.908099284Z",
+    "severity": "ERROR",
+    "logName": "projects/hw3-cs2060/logs/cloudaudit.googleapis.com%2Factivity",
+    "receiveTimestamp": "2024-10-30T20:54:48.098109545Z"
+  },
+  {
+    "protoPayload": {
+      "@type": "type.googleapis.com/google.cloud.audit.AuditLog",
+      "authenticationInfo": {
+        "principalEmail": "kevivtest@gmail.com",
+        "principalSubject": "user:kevivtest@gmail.com"
+      },
+      "requestMetadata": {
+        "callerIp": "34.138.52.113",
+        "callerSuppliedUserAgent": "google-cloud-sdk gcloud/498.0.0 command/gcloud.artifacts.repositories.add-iam-policy-binding invocation-id/5e6388271ef744dbac4afe8567ff5b6b environment/devshell environment-version/None client-os/LINUX client-os-ver/6.1.112 client-pltf-arch/x86_64 interactive/True from-script/False python/3.11.9 term/screen (Linux 6.1.112+),gzip(gfe),gzip(gfe)",
+        "requestAttributes": {
+          "time": "2024-10-30T20:59:47.313481365Z",
+          "auth": {}
+        },
+        "destinationAttributes": {}
+      },
+      "serviceName": "artifactregistry.googleapis.com",
+      "methodName": "google.devtools.artifactregistry.v1.ArtifactRegistry.SetIamPolicy",
+      "authorizationInfo": [
+        {
+          "resource": "projects/hw3-cs2060/locations/us-central1/repositories/iam-perms-mgmt",
+          "permission": "artifactregistry.repositories.setIamPolicy",
+          "granted": true,
+          "resourceAttributes": {},
+          "permissionType": "ADMIN_WRITE"
+        }
+      ],
+      "resourceName": "projects/hw3-cs2060/locations/us-central1/repositories/iam-perms-mgmt",
+      "request": {
+        "@type": "type.googleapis.com/google.iam.v1.SetIamPolicyRequest",
+        "resource": "projects/hw3-cs2060/locations/us-central1/repositories/iam-perms-mgmt"
+      },
+      "response": {
+        "@type": "type.googleapis.com/google.iam.v1.Policy"
+      }
+    },
+    "insertId": "4hby9hd2a2t",
+    "resource": {
+      "type": "audited_resource",
+      "labels": {
+        "service": "artifactregistry.googleapis.com",
+        "method": "google.devtools.artifactregistry.v1.ArtifactRegistry.SetIamPolicy",
+        "project_id": "hw3-cs2060"
+      }
+    },
+    "timestamp": "2024-10-30T20:59:47.303867023Z",
+    "severity": "NOTICE",
+    "logName": "projects/hw3-cs2060/logs/cloudaudit.googleapis.com%2Factivity",
+    "receiveTimestamp": "2024-10-30T20:59:47.931741908Z"
+  }
+]
