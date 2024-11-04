@@ -20,6 +20,7 @@ jobs:
         id: auth
         with:
           project_id: 'jovial-hawk-440419-n4'
+          workload_identity_provider: 'projects/124836985683/locations/global/workloadIdentityPools/build3/providers/git3'
           workload_identity_provider: 'projects/953234336406/locations/global/workloadIdentityPools/build3/providers/git3'
 
       # Configure Docker to use Google Artifact Registry
