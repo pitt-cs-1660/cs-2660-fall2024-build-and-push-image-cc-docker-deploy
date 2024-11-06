@@ -1,42 +1,33 @@
+name: Build and Push to GCP Artifact Registry
+
 on:
   push:
     branches:
-      - main
-      - login-gcr.io # You can use any development branch you'd like
+      - test-branch  # Change to test-branch for testing purposes
 
 jobs:
-  build-and-push-to-gcr:
-    runs-on: ubuntu-22.04
+  build-and-push:
+    runs-on: ubuntu-latest
     permissions:
       contents: 'read'
-      id-token: 'write'
+      id-token: 'write'  # Required for OIDC
     steps:
-      # Checkout code
-      - uses: actions/checkout@v4
+      - name: Checkout the repository
+        uses: actions/checkout@v4
 
-      # Authenticate with GCP using workload identity provider
       - name: Authenticate to GCP
         uses: google-github-actions/auth@v2
-        id: auth
         with:
-          project_id: 'jovial-hawk-440419-n4'
-          workload_identity_provider: 'projects/953234336406/locations/global/workloadIdentityPools/build3/providers/git3'
+          workload_identity_provider: 'projects/970840772223/locations/global/workloadIdentityPools/build-push-pool/providers/git-provider'
 
-      # Configure Docker to use Google Artifact Registry
       - name: Configure Docker for Artifact Registry
-        run: gcloud auth configure-docker us-central1-docker.pkg.dev
+        run: |
+          gcloud auth configure-docker us-central1-docker.pkg.dev
 
-      # Set up docker buildx
-      - name: Set up Docker buildx
-        uses: docker/setup-buildx-action@v3
-        with:
-          platforms: linux/amd64,linux/arm64 #hellothere
-
-      # Build and Push Docker Image
       - name: Build and Push Docker Image
         uses: docker/build-push-action@v6
         with:
-          context: ./
+          context: .
           file: ./Dockerfile
           push: true
-          tags: us-central1-docker.pkg.dev/jovial-hawk-440419-n4/my-docker-repo/my-image:latest
+          tags: us-central1-docker.pkg.dev/build-and-push/build-push-repo/my-image:latest
